@@ -125,7 +125,7 @@ class TestlinkAPIClient(object):
         return self._callServer('getLastExecutionResult', argsAPI)
 
     def getLatestBuildForTestPlan(self, testplanid):
-        """ getLastExecutionResult :
+        """ getLatestBuildForTestPlan :
         Gets the latest build by choosing the maximum build id for a 
         specific test plan  
         """  
@@ -141,7 +141,7 @@ class TestlinkAPIClient(object):
         return self._callServer('getProjects', argsAPI)
 
     def getProjectTestPlans(self, testprojectid):
-        """ getLastExecutionResult :
+        """ getProjectTestPlans :
         Gets a list of test plans within a project 
         """ 
         argsAPI = {'devKey' : self.devKey,
